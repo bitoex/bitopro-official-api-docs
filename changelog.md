@@ -1,6 +1,7 @@
 # Change Log
 | Date       | Version | Description                                                                                                                                                                                       |
 | :--------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 2026/06/09 | v3.5.18 | Update [API Key Lifecycle](README.md#api-key-lifecycle) section in [README](README.md) to document one-time Secret display policy, 365-day auto-expire for keys without IP whitelist, and 30/7-day reminder emails. 401 error description updated to include expired keys. |
 | 2025/01/06 | v3.5.17 | Update [Create Withdraw Invoice API](./api/v3/private/create_an_withdraw_invoice.md) to add `bankAccountSerial`, `bankSerial` parameters for TWD withdrawal.|
 | 2024/05/30 | v3.5.16 | Add `clientID` field into [Open Orders WS stream](./ws/private/open_orders_stream.md) and [History Orders WS stream](./ws/private/history_orders_stream.md) |
 | 2024/04/18 | v3.5.15 | Fix [Get Orders Data API](./api/v3/private/get_orders_data.md) and [Get Trades Data API](./api/v3/private/get_trades_data.md) orderID shift and tradeID shift bug, change shift logic from `>=` to `<=`.|
