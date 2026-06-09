@@ -3,6 +3,7 @@
 *   [Getting Started](#getting-started)
     *   [API Key Setup](#api-key-setup)
         *   [Web Create Api Key SOP](#web-create-api-key-sop)
+        *   [API Key Lifecycle](#api-key-lifecycle)
         *   [API Security Protocol](#api-security-protocol)
         *   [API Example Scripts](#api-example-scripts)
     *   [API Library](#api-library)
@@ -48,10 +49,22 @@
 
 Your new API key (including a public key and a private key) should now be generated. Ensure that you keep them in a secure location, and do not allow anyone else to see them, particularly the private key. Anyone who has your private key can access BitoPro under your identity.
 
-Note that the public key and private key are typically only displayed once, so make sure to save them immediately after they are generated. If you lose the key, you might need to delete it and create a new one.
+### API Key Lifecycle
+
+#### Secret display
+The API Secret is displayed only once at creation time. After leaving the creation page, the Secret cannot be retrieved by any means; there is no "Regenerate Secret" action. If the Secret is lost, delete the key and create a new one.
+
+#### IP-bound keys
+API keys with an IP whitelist remain valid indefinitely and are not subject to automatic expiration.
+
+#### Non-IP-bound keys (Auto Expire)
+API keys without an IP whitelist automatically expire 365 days after their creation date. Two reminder emails are sent to the account email address:
+- 30 days before expiry
+- 7 days before expiry
+
+After expiry, all requests using the key return HTTP 401. To continue using the API, create a new key (and bind it to an IP if you want it permanent).
 
 ### API Security Protocol
-
 
 An API key and secret are employed to authenticate your account's identity and grant authorization for account operations through programming scripts. It is imperative that programmers adhere to the prescribed protocol to ensure the security of your API requests when managing your BitoPro account.
 
@@ -127,7 +140,7 @@ note : Some of API has its own rate limit, please check api document. (e.g [Crea
 | ---------------------------------- | -------------------- | --------------------- | --------------------------- | ------------------------- |
 | 4xx                                |                      |                       |                             |                           |
 |                                    | `400`                | Bad Request           | Request parameters mismatch |                           |
-|                                    | `401`                | Unauthorized api key  | API key has been deleted.   | Use an available API key. |
+|                                    | `401`                | Unauthorized api key  | The API key may have been deleted, expired (auto-expire), or the signature is invalid. | Create a new API key or verify the signature. |
 |                                    | `403`                | Forbidden             | No permission               | Ask your manager or check your apiKey permission setting         |
 |                                    | `404`                | Resource Not Found    | Wrong path                  |                           |
 |                                    | `408`                | Request Timeout       | Send Request Takes Too Long |                           |
