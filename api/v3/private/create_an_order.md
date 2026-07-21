@@ -36,7 +36,7 @@ You can find how to create payload and signature from [authentication document](
 | stopPrice   | string  | No       | The price to trigger stop limit order, **only required** when `type` is `STOP_LIMIT`.                                        |         |                                 | 3564.2563     |
 | condition   | string  | No       | The condition to match stop price, **only required** when `type` is `STOP_LIMIT`.                                            |         | `>=`, `<=`                      | <=            |
 | timeInForce | string  | No       | Time in force condition for orders. If type are `MARKET`, `STOP_LIMIT`, this will always be `GTC`.                                          | `GTC`   | `GTC`, `POST_ONLY`              | POST_ONLY     |
-| clientId    | uint64  | No       | This information help users distinguish their orders.                                                                        |         | 1 ~ 2147483647                  | 12345         |
+| clientId    | uint64  | No       | This information help users distinguish their orders. If set to 0, it is treated the same as not providing this field (equivalent to not passing clientId). |         | 1 ~ 2147483647                  | 12345         |
 | percentage  | uint64  | No       | The amount of the sell order which can be percentage of your balance. (e.g 1 mean 1%)                                        | 1~100   | 100                             |
 
 # Api Response
@@ -54,5 +54,7 @@ You can find how to create payload and signature from [authentication document](
   "clientId": 12345
 }
 ```
+
+> If `clientId` is `0` or not provided when the order was created, the `clientId` key will be omitted from the response.
 
 [Back](../summary.md)

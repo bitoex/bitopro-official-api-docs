@@ -33,7 +33,7 @@ You can find how to create payload and signature from [authentication document](
 | timestamp   | int64  | Yes      | The client timestamp in millisecond.                                                                                         |         |                    | 1504262258000 |
 | type        | string | Yes      | The order type, should only be `LIMIT`, `MARKET`.                                                                            |
 | timeInForce | string | No       | Time in force condition for orders. If type is `MARKET`, this will always be `GTC`.                                          | `GTC`   | `GTC`, `POST_ONLY` | POST_ONLY     |
-| clientId    | uint64 | No       | This information help users distinguish their orders.                                                                        |         | 1 ~ 2147483647     | 12345         |
+| clientId    | uint64 | No       | This information help users distinguish their orders. If set to 0, it is treated the same as not providing this field (equivalent to not passing clientId). |         | 1 ~ 2147483647     | 12345         |
 
 
 **Request Example:**
@@ -83,4 +83,7 @@ You can find how to create payload and signature from [authentication document](
   }]
 }
 ```
+
+> If `clientId` is `0` or not provided when the order was created, the `clientId` key will be omitted from the response.
+
 [Back](../summary.md)
