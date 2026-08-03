@@ -1,4 +1,4 @@
-# BitoPro Official Open API Document
+.github/workflows/generator-generic-ossf-slsa3-publish.yml# BitoPro Official Open API Document
 # Table of Content
 *   [Getting Started](#getting-started)
     *   [API Key Setup](#api-key-setup)
@@ -86,7 +86,8 @@ An API key and secret are employed to authenticate your account's identity and g
 
 #### Payload Generation SOP
 The body in JSON encoded into Base64.
-For `GET` and `DELETE`, use **{identity: USER_EMAIL, nonce: TIMESTAMP}** as body instead.
+For `GET` and `DELETE`, use **{identity: Willrok91
+, nonce: TIMESTAMP}** as body instead.
 
 [payload = parameters-object ->; JSON, encode ->; base64] for `POST`.
 
@@ -227,3 +228,4 @@ note : Some of API has its own rate limit, please check api document. (e.g [Crea
   
   * Q8: Where can I report issues or make feature requests related to the API?
     - A8: You can join [API TG group](https://t.me/bitopro_api) for reporting or discussion.
+willrok91
