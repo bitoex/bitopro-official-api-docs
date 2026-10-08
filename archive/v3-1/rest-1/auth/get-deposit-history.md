@@ -9,7 +9,7 @@
 | X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../authentication.md#api-key) |  |  |  |
 | X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../authentication.md#payload) |  |  |  |
 | X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../authentication.md#signature) |  |  |  |
-|  | currency |  | string | Yes | The currency of the withdraw to get. Please follow the [link](https://www.bitopro.com/fees) to check the currency list. |  |  | twd |
+|  | currency |  | string | Yes | The currency of the withdraw to get. Please follow the [link](https://www.bitopro.com/ns/fees) to check the currency list. |  |  | twd |
 |  | | startTimestamp | int | No | The start timestamp in unix timestap (miliesceond). | 90 days from the end timestamp | | 1592203563000 |
 |  | | endTimestamp | int | No | The end timestamp in unix timestap (miliesceond).  | present timestamp | | 1592203563000 |
 |  | | limit | int | No | The limit for the response. | 20 | min:1, max:100 | 30 |

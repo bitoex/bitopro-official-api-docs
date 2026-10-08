@@ -12,7 +12,7 @@
 
 ## API Key
 
-### Authentication is done using an API key and a secret. To generate this pair, go to the [API Access page](https://bitopro.com/api).
+### Authentication is done using an API key and a secret. To generate this pair, go to the [API Access page](https://www.bitopro.com/api_list).
 
 ## Payload
 

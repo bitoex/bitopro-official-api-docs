@@ -11,7 +11,7 @@ You can find how to create payload and signature from [authentication document](
 | X-BITOPRO-APIKEY    |          |       | string | Yes      | API Key                                                                                           |         |       |                    |
 | X-BITOPRO-PAYLOAD   |          |       | string | Yes      | Payload                                                                                           |         |       |                    |
 | X-BITOPRO-SIGNATURE |          |       | string | Yes      | Signature                                                                                       |         |       |                    |
-|                     | currency |       | string | Yes      | The currency of the withdraw to get. Please follow the [link](https://www.bitopro.com/fees) to check the currency list. |         |       | twd                |
+|                     | currency |       | string | Yes      | The currency of the withdraw to get. Please follow the [link](https://www.bitopro.com/ns/fees) to check the currency list. |         |       | twd                |
 |                     | serial   |       | string | Yes      | The serial of the withdraw.                                                                                             |         |       | 20200417TW51258295 |
 
 # Api Response
@@ -45,7 +45,7 @@ You can find how to create payload and signature from [authentication document](
 | X-BITOPRO-APIKEY    |          |       | string | Yes      | API Key                                                                                           |         |       |            |
 | X-BITOPRO-PAYLOAD   |          |       | string | Yes      | Payload                                                                                          |         |       |            |
 | X-BITOPRO-SIGNATURE |          |       | string | Yes      | Signature                                                                                      |         |       |            |
-|                     | currency |       | string | Yes      | The currency of the withdraw to get. Please follow the [link](https://www.bitopro.com/fees) to check the currency list. |         |       | twd        |
+|                     | currency |       | string | Yes      | The currency of the withdraw to get. Please follow the [link](https://www.bitopro.com/ns/fees) to check the currency list. |         |       | twd        |
 |                     | id       |       | string | Yes      | The id of the withdraw.                                                                                                 |         |       | 3994629320 |
 
 **Response:**

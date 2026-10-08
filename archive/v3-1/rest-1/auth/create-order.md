@@ -11,14 +11,14 @@
 | X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../authentication.md#api-key) |  |  |  |
 | X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../authentication.md#payload) |  |  |  |
 | X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../authentication.md#signature) |  |  |  |
-|  | pair |  | string | Yes | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. |  |  | bito\_eth |
+|  | pair |  | string | Yes | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/ns/fees) to check the pair list. |  |  | bito\_eth |
 
 ## Request body
 
 | Field | Type | Required | Description | Default | Range | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | action | string | Yes | The action type of the order. | | `BUY`, `SELL` | SELL |
-| amount | string | Yes | The amount of the order for the trading pair, please follow the [link](https://www.bitopro.com/fees) to see the limitations. | | | 123.25 |
+| amount | string | Yes | The amount of the order for the trading pair, please follow the [link](https://www.bitopro.com/ns/fees) to see the limitations. | | | 123.25 |
 | price | string | Yes | The price of the order for the trading pair. | | | 0.000075  |
 | timestamp | integer | Yes | The client timestamp in millisecond. | | | 1504262258000 |
 | type | string | Yes | The order type. | | `LIMIT`, `MARKET`, `STOP_LIMIT` | MARKET |

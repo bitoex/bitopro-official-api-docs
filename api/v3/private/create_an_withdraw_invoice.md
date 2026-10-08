@@ -21,7 +21,7 @@ You can find how to create payload and signature from [authentication document](
 | X-BITOPRO-APIKEY | | | string | Yes | API Key | | | |
 | X-BITOPRO-PAYLOAD | | | string | Yes | Payload | | | |
 | X-BITOPRO-SIGNATURE | | | string | Yes | Signature | | | |
-| | currency | | string | Yes | The currency to withdraw. Please follow the [link](https://www.bitopro.com/fees) to check the currency list. Please provide only currency name without protocol, you can define protocol in request body. | | | twd, usdt, btc or eth |
+| | currency | | string | Yes | The currency to withdraw. Please follow the [link](https://www.bitopro.com/ns/fees) to check the currency list. Please provide only currency name without protocol, you can define protocol in request body. | | | twd, usdt, btc or eth |
 
 **Request body:**
 

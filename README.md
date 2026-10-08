@@ -11,7 +11,7 @@
         *   [Python](#python)
         *   [Trade Tools SDK (免責)](./LICENSE)
 *   [API General Info](#api-general-info)
-    *   [General API Information](#general-info)
+    *   [General API Information](#api-general-info)
         *   [API Endpoint & Versioning](#api-endpoint)
         *   [API Version List](#api-version-list)
         *   [API Rate Limit](#api-rate-limit)

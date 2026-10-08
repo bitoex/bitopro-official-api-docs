@@ -19,7 +19,7 @@ You can find how to create payload and signature from [authentication document](
 | X-BITOPRO-APIKEY    |         |       | string | Yes      | API Key                                                                                              |         |       |            |
 | X-BITOPRO-PAYLOAD   |         |       | string | Yes      | Payload                                                                                              |         |       |            |
 | X-BITOPRO-SIGNATURE |         |       | string | Yes      | Signature                                                                                          |         |       |            |
-|                     | pair    |       | string | Yes      | The trading pair in format {BASE}_{QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. |         |       | bito\_eth  |
+|                     | pair    |       | string | Yes      | The trading pair in format {BASE}_{QUOTE}, Please follow the [link](https://www.bitopro.com/ns/fees) to check the pair list. |         |       | bito\_eth  |
 |                     | orderId |       | string | Yes      | The id of the order.                                                                                                      |         |       | 2959906694 |
 |                     | isAllStrategyCanceled  |  | string | No      | set to true, it will delete all strategy settings for that order. Conversely, if set to false, it will not. default value is true. |  |  | true |
 

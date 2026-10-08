@@ -13,7 +13,7 @@ You can find how to create payload and signature from [authentication document](
 | X-BITOPRO-APIKEY    |          |                | string | Yes      | API Key |                                |                |                        |
 | X-BITOPRO-PAYLOAD   |          |                | string | Yes      | Payload |                                |                |                        |
 | X-BITOPRO-SIGNATURE |          |                | string | Yes      | Signature |                                |                |                        |
-|                     | currency |                | string | Yes      | The currency of the withdraw to get. Please follow the [link](https://www.bitopro.com/fees) to check the currency list.                  |                                |                | twd                    |
+|                     | currency |                | string | Yes      | The currency of the withdraw to get. Please follow the [link](https://www.bitopro.com/ns/fees) to check the currency list.                  |                                |                | twd                    |
 |                     |          | startTimestamp | int64  | No       | The start timestamp in unix timestap (miliesceond).                                                                                      | 90 days from the end timestamp |                | 1592203563000          |
 |                     |          | endTimestamp   | int64  | No       | The end timestamp in unix timestap (miliesceond).                                                                                        | present timestamp              |                | 1592203563000          |
 |                     |          | limit          | int64  | No       | The limit for the response.                                                                                                              | 20                             | min:1, max:100 | 30                     |
@@ -97,4 +97,4 @@ You can find how to create payload and signature from [authentication document](
     ]
 }
 ```
-[Back](README.md)
+[Back](../summary.md)

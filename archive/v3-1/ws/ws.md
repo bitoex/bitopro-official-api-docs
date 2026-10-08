@@ -1,11 +1,11 @@
 # WebSocket Streams for BitoPro
 
-* [WebSocket Streams for BitoPro](ws.md#WebSocket-Streams-for-BitoPro)
-  * [General WebSocket Information](ws.md#General-WebSocket-Information)
-  * [Detailed Stream Information](ws.md#Detailed-Stream-Information)
-    * [Order Book](ws.md#Order-Book)
-    * [Ticker](ws.md#Ticker)
-    * [Trade](ws.md#Trade)
+* [WebSocket Streams for BitoPro](ws.md#websocket-streams-for-bitopro)
+  * [General WebSocket Information](ws.md#general-websocket-information)
+  * [Detailed Stream Information](ws.md#detailed-stream-information)
+    * [Order Book](ws.md#order-book)
+    * [Ticker](ws.md#ticker)
+    * [Trade](ws.md#trade)
 
 ## General WebSocket Information
 

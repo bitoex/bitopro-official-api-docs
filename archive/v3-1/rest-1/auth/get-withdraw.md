@@ -9,7 +9,7 @@
 | X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../authentication.md#api-key) |  |  |  |
 | X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../authentication.md#payload) |  |  |  |
 | X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../authentication.md#signature) |  |  |  |
-|  | currency |  | string | Yes | The currency of the withdraw to get. Please follow the [link](https://www.bitopro.com/fees) to check the currency list. |  |  | twd |
+|  | currency |  | string | Yes | The currency of the withdraw to get. Please follow the [link](https://www.bitopro.com/ns/fees) to check the currency list. |  |  | twd |
 |  | serial |  | string | Yes | The serial of the withdraw. |  |  | 20200417TW51258295 |
 
 ## Response sample
@@ -42,7 +42,7 @@
 | X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../authentication.md#api-key) |  |  |  |
 | X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../authentication.md#payload) |  |  |  |
 | X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../authentication.md#signature) |  |  |  |
-|  | currency |  | string | Yes | The currency of the withdraw to get. Please follow the [link](https://www.bitopro.com/fees) to check the currency list. |  |  | twd |
+|  | currency |  | string | Yes | The currency of the withdraw to get. Please follow the [link](https://www.bitopro.com/ns/fees) to check the currency list. |  |  | twd |
 |  | id |  | string | Yes | The id of the withdraw. |  |  | 3994629320 |
 
 ## Response sample

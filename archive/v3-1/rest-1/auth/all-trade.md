@@ -9,7 +9,7 @@
 | X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../authentication.md#api-key) |  |  |  |
 | X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../authentication.md#payload) |  |  |  |
 | X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../authentication.md#signature) |  |  |  |
-|  | pair |  | string | Yes | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. |  |  | bito\_eth |
+|  | pair |  | string | Yes | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/ns/fees) to check the pair list. |  |  | bito\_eth |
 |  |  | startTimestamp | integer | No | The start timestamp in unix timestap (miliesceond). | 90 days from the end timestamp  |  | 1592203563000 |
 |  |  | endTimestamp | integer | No | The end timestamp in unix timestap (miliesceond). | present timestamp  | | 1592203563000 |
 |  |  | orderId | string | No | The id of the order.	 | | | 6995795641 |

@@ -18,10 +18,10 @@ Allow `1` request per second per IP.
 
 | Header | Path | Query | Type | Required | Description | Default | Range | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| X-BITOPRO-APIKEY |  |  | string | Yes | [API Key]() |  |  |  |
-| X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload]() |  |  |  |
-| X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature]() |  |  |  |
-|  | pair |  | string | Yes | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. |  |  | bito\_eth |
+| X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../authentication.md#api-key) |  |  |  |
+| X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../authentication.md#payload) |  |  |  |
+| X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../authentication.md#signature) |  |  |  |
+|  | pair |  | string | Yes | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/ns/fees) to check the pair list. |  |  | bito\_eth |
 |  |  | page | integer | No | The page number for the query. | 1 |  | 1 |
 |  |  | active | bool | No | The flag to specify if only active\(in progress\) orders will return. | `false` | `true`, `false` | true |
 

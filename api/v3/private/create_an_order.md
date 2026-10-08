@@ -3,7 +3,7 @@
 Create an order api, this endpoint support to limit, market and stop-limit order. 
 
 > 
-After initiating an order, you can utilize the WebSocket streams for both [open orders](../../../ws/private/open_order_stream.md) and [history orders](../../../ws/private/history_order_stream.md) to continuously receive updated information about your orders in real-time.
+After initiating an order, you can utilize the WebSocket streams for both [open orders](../../../ws/private/open_orders_stream.md) and [history orders](../../../ws/private/history_orders_stream.md) to continuously receive updated information about your orders in real-time.
 
 
 
@@ -22,7 +22,7 @@ You can find how to create payload and signature from [authentication document](
 | X-BITOPRO-APIKEY    |      |       | string | Yes      | API Key                                                                                             |         |       |           |
 | X-BITOPRO-PAYLOAD   |      |       | string | Yes      | Payload                                                                                         |         |       |           |
 | X-BITOPRO-SIGNATURE |      |       | string | Yes      | Signature                                                                                     |         |       |           |
-|                     | pair |       | string | Yes      | The trading pair in format {BASE}_{QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. |         |       | bito\_eth |
+|                     | pair |       | string | Yes      | The trading pair in format {BASE}_{QUOTE}, Please follow the [link](https://www.bitopro.com/ns/fees) to check the pair list. |         |       | bito\_eth |
 
 **Request body:**
 

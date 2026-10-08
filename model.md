@@ -2,7 +2,7 @@
 
 * [Order Model Relationship](#order-model-relationship)
 * [Order Model Explanation](#order-model-explanation)
-* [Order Status Explanation](#order-status-explanation)
+* [Order Status Explanation](#order-status-enum)
 
 
 ## Order Model Relationship

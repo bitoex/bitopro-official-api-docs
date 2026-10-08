@@ -12,7 +12,7 @@ If you require real-time updates or a high-frequency trading environment, we rec
 
 | Header | Path | Query | Type   | Required | Description                                                                                                               | Default | Range | Example   |
 | :----- | :--- | :---- | :----- | :------- | :------------------------------------------------------------------------------------------------------------------------ | :------ | :---- | :-------- |
-|        | pair |       | string | Yes      | The trading pair in format {BASE}_{QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. |         |       | bito\_eth |
+|        | pair |       | string | Yes      | The trading pair in format {BASE}_{QUOTE}, Please follow the [link](https://www.bitopro.com/ns/fees) to check the pair list. |         |       | bito\_eth |
 
 # Api Response
 
