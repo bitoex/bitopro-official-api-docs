@@ -62,10 +62,12 @@ The allowed values of `addressPlatform` for [Create Withdraw Invoice](create_an_
 
 ## Not in the List
 
+`addressPlatform=0` (Other) is **only for a platform that is not in the lists above**. If the platform is in the list, select that platform and do not provide `addressPlatformOther`.
+
 | addressPlatform | addressPlatformType | Name | Remark |
 | :--- | :--- | :--- | :--- |
-| 0 | 0 (exchange) | Other (exchange) | `addressPlatformOther` is required, and the recipient information is required |
-| 0 | 1 (wallet) | Other (wallet) | `addressPlatformOther` is required, and please provide the recipient information |
+| 0 | 0 (exchange) | Other (exchange) | Only when the exchange is not in the list. `addressPlatformOther` (the platform name) is then required. The recipient information follows the same rules as other platforms, see [Recipient Information Rules](create_an_withdraw_invoice.md#recipient-information-rules). |
+| 0 | 1 (wallet) | Other (wallet) | Only when the wallet is not in the list. `addressPlatformOther` (the platform name) is then required. The recipient information follows the same rules as other platforms, see [Recipient Information Rules](create_an_withdraw_invoice.md#recipient-information-rules). |
 
 > The platform list may be updated at any time, please refer to the latest BitoPro announcement.
 

@@ -48,7 +48,7 @@ The following fields are only for cryptocurrency withdrawal. **TWD withdrawal to
 | recipientCompanyTaxId | string | No | The tax ID / registration number / LEI of the recipient company, **only required** when `recipientType` is `1`, the amount reaches the [threshold](#amount-threshold) and the destination is not BitoPro exchange. Optional otherwise. | | | 12345678 |
 | recipientCountry | string | No | The country of the recipient, **only required** when the amount reaches the [threshold](#amount-threshold) and the destination is not BitoPro exchange. It is also required when `recipientCity` is provided. | | ISO 3166-1 alpha-2 country code (2 letters), case-insensitive. Invalid codes will be rejected. | TW |
 | recipientCity | string | No | The city of the recipient, **only required** when the amount reaches the [threshold](#amount-threshold) and the destination is not BitoPro exchange. | | For `TW`, it must be a code in the [Recipient City List (TW)](recipient_city_tw_list.md) (case-insensitive). For other countries, fill in the city name. | taipei or New York |
-| addressPlatform | int32 | Yes | The platform that the receiving address belongs to. | | See [Address Platform List](address_platform_list.md), `0`: Other | 3 |
+| addressPlatform | int32 | Yes | The platform that the receiving address belongs to. | | See [Address Platform List](address_platform_list.md). `0`: Other, only when the platform is not in the list | 3 |
 | addressPlatformOther | string | No | The custom platform name when the platform is not in the list, **only required** when `addressPlatform` is `0`. | | Must not be blank or the same as the name of a platform in the list. Must not be provided when `addressPlatform` is not `0`. | |
 | addressPlatformType | int32 | Yes | The category of the platform. **It must match the category of `addressPlatform`**, otherwise the request will be rejected. | | `0`: Exchange, `1`: Wallet | 0 |
 
@@ -228,7 +228,7 @@ The following 5 examples show how to fill in the Travel Rule fields in common sc
 }
 ```
 
-`addressPlatform=0` means "Other" (not in the list), and `addressPlatformOther` must be provided with the custom platform name. `addressPlatformOther` must not be provided when `addressPlatform` is not `0`. Recipient information is required for an "Other" exchange, and the amount in this example reaches the threshold, so `recipientCountry` and `recipientCity` are also required.
+`addressPlatform=0` means "Other" (not in the list), and `addressPlatformOther` must be provided with the custom platform name. Use "Other" only when the platform is not in the list; if it is in the list, select that platform and do not provide `addressPlatformOther`. Selecting "Other" does not change the recipient information rules, it follows the same rules as other platforms (see [Recipient Information Rules](#recipient-information-rules)). The amount in this example reaches the threshold, so `recipientCountry` and `recipientCity` are also required.
 
 # Api Response
 
