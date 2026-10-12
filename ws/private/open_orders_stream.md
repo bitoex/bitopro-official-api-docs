@@ -33,7 +33,7 @@ You can find how to create payload and signature from [authentication document](
 | 1    | type              | string  | LIMIT, Market or STOP_LIMIT                                                         |
 | 1    | createdTimestamp  | integer | Unix Timestamp in milliseconds (seconds * 1000)                                     |
 | 1    | updatedTimestamp  | integer | Unix Timestamp in milliseconds (seconds * 1000)                                     |
-| 1    | status            | integer | [see order status](../../model.md#order-status-explanation)                                      |
+| 1    | status            | integer | [see order status](../../model.md#order-status-enum)                                      |
 | 1    | originalAmount    | string  |                                                                                     |
 | 1    | remainingAmount   | string  |                                                                                     |
 | 1    | executedAmount    | string  |                                                                                     |
@@ -48,7 +48,7 @@ You can find how to create payload and signature from [authentication document](
 | 1    | timeInForce       | string  | Time in force condition for orders. If type is `MARKET`, this will always be `GTC`. | `GTC` | `GTC`, `POST_ONLY` | POST_ONLY |
 | 1    | clientID          | integer | This information help users distinguish their orders.                               |
  
-To get detailed order model explanation, refer to [order model explanation.](../../../model.md#order-model-explanation)
+To get detailed order model explanation, refer to [order model explanation.](../../model.md#order-model-explanation)
 
 **Response Example:**
 
@@ -108,4 +108,4 @@ To get detailed order model explanation, refer to [order model explanation.](../
     }
 }
 ```
-[Back](README.md)
+[Back](../summary.md)

@@ -20,7 +20,7 @@ You can find how to create payload and signature from [authentication document](
 | X-BITOPRO-APIKEY    |      |                | string | Yes      | API Key                                                                                                                                                                                                                   |                   |                                       |               |
 | X-BITOPRO-PAYLOAD   |      |                | string | Yes      | Payload                                                                                                                                                                                                                  |                   |                                       |               |
 | X-BITOPRO-SIGNATURE |      |                | string | Yes      | Signature                                                                                                                                                                                                              |                   |                                       |               |
-|                     |  |  pair  | string | No      | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. Response all pair orders if pair is empty.                                                                                                                    |                   |                                       | bito\_eth     |
+|                     |  |  pair  | string | No      | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/ns/fees) to check the pair list. Response all pair orders if pair is empty.                                                                                                                    |                   |                                       | bito\_eth     |
 
 # Api Response
 
@@ -76,4 +76,4 @@ To get detailed order model explanation, refer to [order model explanation.](../
   ]
 }
 ```
-[Back](README.md)
+[Back](../summary.md)

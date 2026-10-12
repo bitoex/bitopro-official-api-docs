@@ -1,11 +1,11 @@
 # WebSocket Private Streams for BitoPro
 
-* [WebSocket Private Streams for BitoPro](private_ws.md#WebSocket-Streams-for-BitoPro)
-  * [General Private WebSocket Information](private_ws.md#General-WebSocket-Information)
-  * [Authentication For Private Websocket Connection](private_ws.md#Authentication-For-Private-Websocket-Connection)
-  * [Detailed Private Stream Information](private_ws.md#Detailed-Stream-Information)
-    * [Orders](private_ws.md#Orders)
-    * [Account Balance](private_ws.md#Ticker)
+* [WebSocket Private Streams for BitoPro](private_ws.md#websocket-private-streams-for-bitopro)
+  * [General Private WebSocket Information](private_ws.md#general-private-websocket-information)
+  * [Authentication For Private Websocket Connection](private_ws.md#authentication-for-private-websocket-connection)
+  * [Detailed Private Stream Information](private_ws.md#detailed-stream-information)
+    * [Orders](private_ws.md#active-orders)
+    * [Account Balance](private_ws.md#account-balance)
 
 ## General Private WebSocket Information
 

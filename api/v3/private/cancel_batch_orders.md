@@ -52,4 +52,4 @@ You can find how to create payload and signature from [authentication document](
   }
 }
 ```
-[Back](README.md)
+[Back](../summary.md)

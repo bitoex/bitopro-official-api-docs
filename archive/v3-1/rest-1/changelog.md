@@ -4,8 +4,8 @@
 | :--- | :--- | :--- |
 | 2023/03/28 | v3.5.9 | Add 50 limit for [OrderBook API](./open/order-book.md) and [OrderBook WS](../ws/ws.md) |
 | 2022/05/23 | v3.5.8 | Add BSC Protocol for [Withdrawal API](./auth/withdraw.md) |
-| 2022/04/28 | v3.5.7 | Add Percent for [CreateOrder API](./auth/create-order) |
-| 2022/03/15 | v3.5.6 | Add ClientID for [CreateOrder API](./auth/create-order) |
+| 2022/04/28 | v3.5.7 | Add Percent for [CreateOrder API](./auth/create-order.md) |
+| 2022/03/15 | v3.5.6 | Add ClientID for [CreateOrder API](./auth/create-order.md) |
 | 2022/02/16 | v3.5.5 | Add [Private Websocket Stream](../ws/private_ws.md). |
 | 2021/12/23 | v3.5.4 | Add [All Trades](auth/all-trade.md) auth api. |
 | 2021/12/23 | v3.5.4 | [Cancel multiple orders](auth/cancel-batch.md) and [Cancel all orders](auth/cancel-all.md) to allow `1` requests per second per IP. |

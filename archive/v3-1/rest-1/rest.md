@@ -10,7 +10,7 @@
   * `600` requests per minute per IP
   * `600` requests per minute per user account
 
-#### For all endpoints require authentication, you should create the API key at [BitoPro](https://www.bitopro.com/api)
+#### For all endpoints require authentication, you should create the API key at [BitoPro](https://www.bitopro.com/api_list)
 
 ## [Authentication](authentication.md)
 

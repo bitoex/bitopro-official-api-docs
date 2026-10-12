@@ -11,7 +11,7 @@ Fetches all orders of specific pair within 90 days, and ordered by create time.
 | X-BITOPRO-APIKEY |  |  | string | Yes | [API Key](../authentication.md#api-key) |  |  |  |
 | X-BITOPRO-PAYLOAD |  |  | string | Yes | [Payload](../authentication.md#payload) |  |  |  |
 | X-BITOPRO-SIGNATURE |  |  | string | Yes | [Signature](../authentication.md#signature) |  |  |  |
-|  | pair |  | string | Yes | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. |  |  | bito\_eth |
+|  | pair |  | string | Yes | The trading pair in format ${BASE}\_${QUOTE}, Please follow the [link](https://www.bitopro.com/ns/fees) to check the pair list. |  |  | bito\_eth |
 |  |  | startTimestamp | integer | No | The start time of orders. | 90 days |  | 1605857448852 |
 |  |  | endTimestamp | integer | No | The end time of orders. | current timestamp |  | 1605857448852 |
 |  |  | statusKind | string | No | Filter order based on status kind, `OPEN` all active orders, `DONE` all finished orders, `ALL` for all. `OPEN` includes order status of -1, 0 and 1, `DONE` includes order status of 2 and 3. For order status, [see](../rest.md#order-status)| `ALL` | `OPEN`, `DONE`, `ALL` | ALL |

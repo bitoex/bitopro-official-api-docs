@@ -25,7 +25,7 @@ You can find how to create payload and signature from [authentication document](
 | X-BITOPRO-APIKEY    |      |       | string | Yes      | API Key                                                                                             |         |       |           |
 | X-BITOPRO-PAYLOAD   |      |       | string | Yes      | Payload                                    |         |       |           |
 | X-BITOPRO-SIGNATURE |      |       | string | Yes      | Signature                              |         |       |           |
-|                     | pair |       | string | No       | The trading pair in format {BASE}_{QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list. |         |       | bito\_eth |
+|                     | pair |       | string | No       | The trading pair in format {BASE}_{QUOTE}, Please follow the [link](https://www.bitopro.com/ns/fees) to check the pair list. |         |       | bito\_eth |
 
 # Api Response
 

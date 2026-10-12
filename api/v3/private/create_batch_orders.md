@@ -26,7 +26,7 @@ You can find how to create payload and signature from [authentication document](
 
 | Field       | Type   | Required | Description                                                                                                                  | Default | Range              | Example       |
 | :---------- | :----- | :------- | :--------------------------------------------------------------------------------------------------------------------------- | :------ | :----------------- | :------------ |
-| pair        | string | Yes      | The trading pair in format {BASE}_{QUOTE}, Please follow the [link](https://www.bitopro.com/fees) to check the pair list.    |         |                    | bito\_eth     |
+| pair        | string | Yes      | The trading pair in format {BASE}_{QUOTE}, Please follow the [link](https://www.bitopro.com/ns/fees) to check the pair list.    |         |                    | bito\_eth     |
 | action      | string | Yes      | The action type of the order, should only be `BUY` or `SELL`.                                                                |         | `BUY` or `SELL`    | `BUY`         |
 | amount      | string | Yes      | The base amount of the order for the trading pair. **However, when executing a market buy order, this field represents the order's quote value.** Please check [this doc](../public/get_trading_pair_info.md) for limitation. |         | > 0                | 100           |
 | price       | string | Yes      | The price of the order for the trading pair.                                                                                 |         | > 0                | 10            |
