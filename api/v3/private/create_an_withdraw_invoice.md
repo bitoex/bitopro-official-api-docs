@@ -40,7 +40,7 @@ The following fields are only for cryptocurrency withdrawal. **TWD withdrawal to
 
 | Field | Type | Required | Description | Default | Range | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| recipientRelation | int32 | Yes | The relationship between you and the recipient. It is also required when the destination is BitoPro exchange (`addressPlatform=37`). | | `0`: Self, `1`: Others. Other values will be rejected. | 1 |
+| recipientRelation | int32 | Yes | The relationship between you and the recipient. It is also required when the destination is BitoPro exchange (`addressPlatform=37`), unless the withdrawal is identified as an internal transfer (see [Internal Transfer](#internal-transfer-vs-addressplatform37)). | | `0`: Self, `1`: Others. Other values will be rejected. | 1 |
 | recipientType | int32 | No | The type of the recipient, **only required** when recipient information is required (see [Recipient Information Rules](#recipient-information-rules)). **It is also required when the recipient is yourself (`recipientRelation=0`)**, the system will not fill in your account information automatically. | | `0`: Individual, `1`: Company / Institution. Other values will be rejected. | 0 |
 | recipientFirstName | string | No | The first name of the recipient, **only required** when `recipientType` is `0` and recipient information is required. | | Up to 150 characters | Chun |
 | recipientLastName | string | No | The last name of the recipient, **only required** when `recipientType` is `0` and recipient information is required. | | Up to 150 characters | Chen |
@@ -59,18 +59,26 @@ The following fields are only for cryptocurrency withdrawal. **TWD withdrawal to
 | Rule | Description |
 | :--- | :--- |
 | Required for every withdrawal | `recipientRelation`, `addressPlatform` and `addressPlatformType` are required for every cryptocurrency withdrawal (`addressPlatformOther` is also required when `addressPlatform=0`). The other recipient fields depend on the destination and the amount, see the rules below. |
-| Withdraw to BitoPro exchange | When `addressPlatformType=0` and `addressPlatform=37` (BitoPro exchange), the recipient information can be omitted entirely. This does not apply to BitoPro (`33`) in the cold wallet list, which requires recipient information like other wallets. |
+| Withdraw to BitoPro exchange | When `addressPlatformType=0` and `addressPlatform=37` (BitoPro exchange), the recipient information can be omitted entirely, but `recipientRelation`, `addressPlatform` and `addressPlatformType` are still required. BitoPro (`33`) in the cold wallet list is a different option: it is treated as an overseas platform, so the recipient information is required, the same as other wallets and non-Taiwan exchanges. |
 | Withdraw to other platforms | Please provide complete recipient information. **It is also required when the recipient is yourself (`recipientRelation=0`).** |
 | Optional field | `recipientCompanyTaxId` (tax ID / registration number) is optional except in specific cases, see [Amount Threshold](#amount-threshold). |
 
-> The Travel Rule fields do not apply to TWD withdrawal and BitoPro internal transfer (the receiving address is a BitoPro account address).
+### Internal Transfer vs. `addressPlatform=37`
+
+Whether a withdrawal is a BitoPro internal transfer is determined by the system from the receiving address, not by `addressPlatform`:
+
+| Case | Travel Rule fields |
+| :--- | :--- |
+| The receiving address is a BitoPro account address (internal transfer, identified by the system) | None of the Travel Rule fields are validated, they can be omitted entirely. |
+| The receiving address is not identified as internal, and you select `addressPlatform=37` (BitoPro exchange) | `recipientRelation`, `addressPlatform` and `addressPlatformType` are still required. Only the recipient information can be omitted. |
+| TWD withdrawal | The Travel Rule fields do not apply. |
 
 ### Recipient Information Rules
 
 | Destination | Recipient information | Description |
 | :--- | :--- | :--- |
 | BitoPro exchange (`37`) | Optional | It can always be omitted regardless of other conditions. |
-| Other exchanges or wallets (including BitoPro cold wallet, `33`) | Required | Please always provide complete recipient information to ensure the withdrawal is processed smoothly. |
+| Other exchanges or wallets (including BitoPro cold wallet `33`, which is treated as an overseas platform) | Required | Please always provide complete recipient information to ensure the withdrawal is processed smoothly. |
 
 > **Note**: The withdrawal request will be rejected if the recipient information is not provided as required. All provided fields must follow the format and the allowed values.
 

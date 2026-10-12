@@ -13,7 +13,7 @@ The allowed values of `addressPlatform` for [Create Withdraw Invoice](create_an_
 | 5 | TWEX |
 | 6 | XREX |
 | 7 | ZONE Wallet |
-| 37 | BitoPro (the recipient information can be omitted entirely when this option is selected) |
+| 37 | BitoPro (the recipient information can be omitted entirely when this option is selected, `recipientRelation`, `addressPlatform` and `addressPlatformType` are still required) |
 
 ## Exchanges (`addressPlatformType=0`) - Non-Taiwan
 
@@ -55,7 +55,7 @@ The allowed values of `addressPlatform` for [Create Withdraw Invoice](create_an_
 
 | addressPlatform | Name |
 | :--- | :--- |
-| 33 | BitoPro (cold wallet, the recipient information is still required, the omission rule for BitoPro exchange does not apply) |
+| 33 | BitoPro (cold wallet, treated as an overseas platform: the recipient information is required, the omission rule for BitoPro exchange `37` does not apply) |
 | 34 | Ledger |
 | 35 | Tangem |
 | 36 | Trezor |
